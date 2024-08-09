@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, max-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" type="text/css" href="estilo/style.css"/>
+</head>
+<script language="javascript" src="javas/script.js"></script>
+
+
+<body>
+    <section id="container">
+        
+        <div id="calculadora">
+            <h1 id="title">MAPA</h1>
+            <h2 class="calculadoraTitle">Calculadora de Churrasco</h2>
+            <form onsubmit="return dados(event)" method="post" class="calculadoraForm">
+                <div class="calculadoraDivInput">
+                    <label for="homens">Homens:</label>
+                    <input type="number" id="homens" name="homens" class="homens">
+                </div>
+                <div class="calculadoraDivInput">
+                    <label for="mulheres">Mulheres:</label>
+                    <input type="number" id="mulheres" name="mulheres" class="mulheres">
+                </div>
+                <div class="calculadoraDivInput">
+                    <label for="criancas">Crianças:</label>
+                    <input type="number" id="criancas" name="criancas" class="criancas">
+                </div>
+                <input id="botao" type="submit" value="Calcular">
+            </form>
+        
+            <div id="divResultado">
+                <p>Quantidade para comprar:</p>
+                <ul id="ingredienteUl">
+                   
+                </ul>
+            </div>
+        </div>
+        
+    </section>
+
+</body>
+</html>
